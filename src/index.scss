@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Futura, GoshaSans,
+  sans-serif;
+}
+
+@font-face {
+
+  font-family: 'Futura';
+  src: url('./../src/common/fonts/FuturaBookC.ttf');
+  font-style: normal;
+  font-weight: 500;
+
+}
+
+@font-face {
+
+  font-family: 'GoshaSans';
+  src: url('./../src/common/fonts/GoshaSans-Light.ttf');
+
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

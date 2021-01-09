@@ -1,0 +1,104 @@
+.wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  .formBlock{
+    position: relative;
+    width: 450px;
+    height: 410px;
+    transition: all 0.5s ease-out;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    .form {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      p{
+        font-size: 10px;
+        font-family: goshaSans;
+        color: #C4C4C4;
+        margin: 0;
+        margin-top: 8px;
+      }
+      h2{
+        color: black;
+        font-weight: bold;
+        font-family: goshaSans;
+        font-size: 18px;
+        margin-top: 40px;
+      }
+      input{
+        width: 40%;
+        background-color: #ffffff;
+        border: none;
+        text-align: center;
+        border-bottom: 1px solid #C4C4C4;
+        font-size: 27px;
+        font-weight: bold;
+        font-family: goshaSans;
+        color: black!important;
+        margin-top: 12px;
+      }
+      .systems{
+        display: flex;
+        align-items: center;
+        width: 87%;
+        margin-top: 20px;
+        div{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img{
+            width: 30px;
+          }
+          p{
+            margin: 0;
+            color: black;
+            font-family: goshaSans;
+            font-weight: bold;
+            font-size: 12px;
+          }
+        }
+      }
+      button{
+        font-family: goshaSans;
+        font-size: 15px;
+        font-weight: bold;
+        width: 160px;
+        height: 40px;
+        background-color: #F7CA2F;
+        color: black;
+        border: none;
+        margin-top: 60px;
+      }
+      button:hover{
+        cursor: pointer;
+      }
+    }
+    .cancel{
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 10000000000;
+      transition: all 0.5s ease-out;
+      svg{
+        color: black;
+        font-size: 18px
+      }
+      &:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+      }
+    }
+  }
+}

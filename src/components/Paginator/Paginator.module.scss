@@ -1,0 +1,25 @@
+.paginator{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5vw;
+  div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: goshaSans;
+    font-size: 1.4vw;
+    color: #7FD6C2;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .curr{
+    border: 2px solid #7FD6C2;
+    font-weight: bold;
+  }
+}

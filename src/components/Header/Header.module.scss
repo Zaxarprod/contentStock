@@ -1,0 +1,144 @@
+.wrapper{
+  padding:0;
+  margin:0;
+  width: 100%;
+  height: 140px;
+  //background-color: mediumaquamarine;
+  .brand{
+    font-family: Futura;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    padding-left: 2.5vw;
+  }
+  .navBlock{
+    display: flex;
+    align-items: center;
+  }
+  .loginedBlock{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    >div{
+      width: 118px;
+      height: 46px;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .userBlock{
+      background-color: #F7CA2F;
+      height: 46px;
+      width: 46px;
+      border-radius: 50%;
+      font-family: goshaSans;
+      font-size: 14px;
+      letter-spacing: 1px;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    .list{
+      min-width: 150px;
+      position: absolute;
+      top: 80%;
+      right:0;
+      z-index: 100000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      transition: all 0.5s ease-out;
+      background-color:  #F7CA2F;
+      height:0;
+      div{
+        transition: all 0.5s ease-out;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        color: white;
+        font-family: goshaSans;
+        font-size: 14px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1px;
+        text-align: left;
+        a{
+          color: white;
+        }
+        &:hover{
+          cursor: pointer;
+          background-color: white;
+          color: black;
+          border: 1px solid black;
+          a{
+            color: black;
+          }
+        }
+      }
+    }
+    .openList{
+      height: auto;
+      transition: all 0.5s ease-out;
+      div{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        opacity: 1;
+      }
+    }
+    .closeList{
+      height: 0;
+      div {
+        transition: all 0.5s ease-out;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+      }
+    }
+  }
+  .loginBlock{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    div{
+      height: 40px;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-family: GoshaSans;
+      font-style: normal;
+      font-weight: 100;
+      letter-spacing: 1px;
+      font-size: 14px;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      background-color: #FFD33E;
+      transition: all 0.5s ease-out;
+    }
+    div:last-child{
+      &:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+      }
+    }
+    div:first-child{
+      color: #C4C4C4;
+      background: none;
+      &:hover{
+        cursor: pointer;
+        color: #9a9a9a;
+      }
+    }
+  }
+}

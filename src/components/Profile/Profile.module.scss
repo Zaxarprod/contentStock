@@ -1,0 +1,115 @@
+.wrapper{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 1.5vw;
+  .profile{
+    padding-bottom: 10vw;
+  }
+  .hiBlock{
+    width: 100%;
+    color: #E0719E;
+    font-family: goshaSans;
+    font-size: 2vw;
+    font-weight: bold;
+  }
+  .mainInfoBlock{
+    margin-top: 1vw;
+    width: 100%;
+    display: flex;
+    .avatar{
+      width: 30%;
+      height: 20vw;
+      background-color: #d2d0d0;
+    }
+    .Info{
+      width: 70%;
+      padding-top: 1.5vw;
+      padding-left: 2vw;
+      .cityInfo{
+        p{
+          font-family: goshaSans;
+          font-size: 1.3vw;
+          color: black;
+          font-weight: bold;
+          margin: 0;
+        }
+        p:last-child{
+          color: #C4C4C4;
+          font-size: 0.95vw;
+          margin-top: 0.5vw;
+          font-weight: normal;
+        }
+      }
+      .statisticInfo{
+        margin-top: 2vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        >div{
+          margin-right: 2.9vw;
+          margin-bottom: 1vw;
+          p{
+            margin: 0;
+            margin-bottom: 1vw;
+            font-size: 0.95vw;
+            font-family: goshaSans;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .addInfoBlockContent{
+    width: 100%;
+    padding-top: 3vw;
+    >div{
+      h2{
+        font-family: goshaSans;
+        font-weight: bold;
+        font-size: 2vw;
+        margin:0;
+        margin-bottom: 0.6vw;
+      }
+    }
+    p{
+      font-family: goshaSans;
+      margin: 0;
+      color: #7FD6C2;
+      font-size: 0.95vw;
+      font-weight: bold;
+    }
+  }
+  .additionInfoBlock{
+    width: 100%;
+    margin-top: 3vw;
+    .addInfoBlockNav{
+      display: flex;
+      >a{
+        font-weight: bold;
+        font-family: goshaSans;
+        font-size: 1.3vw;
+        padding-top: 0.6vw;
+        padding-bottom: 0.6vw;
+        padding-left: 2.4vw;
+        padding-right: 2.4vw;
+        border-bottom: 2px solid #C4C4C4;
+        transition: all 0.5s ease-out;
+        text-decoration: none;
+        color: black;
+      }
+      >a:first-child{
+        padding-left: 0;
+      }
+      .activeAddInfoBlockNav{
+        border-bottom: 4px solid #F7CA2F;
+      }
+      >a:hover{
+        cursor: pointer;
+        border-bottom: 4px solid #7FD6C2;
+      }
+    }
+  }
+}

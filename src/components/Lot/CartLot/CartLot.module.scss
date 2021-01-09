@@ -1,0 +1,111 @@
+.wrapper{
+  position: relative;
+  border: 1px solid #000000;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 48vw;
+  height: 58vw;
+  margin-left: 2vw;
+  margin-bottom: 7vw;
+}
+.cart{
+  position: absolute;
+  top:1vw;
+  left:-2vw;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  background-color: white;
+  padding-top: 4.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .mainButton{
+    width: 37%;
+    height: 4vw;
+    border: 0.2vw solid #000000;
+    position: relative;
+    margin-top: 5vw;
+    margin-bottom: 7vw;
+    transition: all 0.5s ease-out;
+    &:hover{
+      cursor: pointer;
+      div{
+        background: none;
+        border: 0.2vw solid #000000;
+      }
+    }
+    div{
+      width: 100%;
+      position: absolute;
+      height: 4vw;
+      background-color: #F7CA2F;
+      font-weight: bold;
+      font-family: goshaSans;
+      font-size: 1.23vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: -0.7vw;
+      left: -1.7vw;
+      transition: all 0.5s ease-out;
+    }
+  }
+  .descriptionBlock{
+    padding-left: 1.5vw;
+    margin-top: 2vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    width: 100%;
+    background-color: #F3F6E6;
+    div{
+      width: 100%;
+      display: flex;
+      p:first-child{
+        width: 43%;
+        font-weight: bold;
+      }
+      p{
+        font-family: goshaSans;
+        font-size: 1.23vw;
+        margin: 0;
+      }
+    }
+  }
+  .priceBlock{
+    width: 100%;
+    padding-left: 1.5vw;
+    margin-top: 4vw;
+    div{
+      width: 100%;
+      display: flex;
+      margin-bottom: 2.5vw;
+      p:first-child{
+        width: 43%;
+        font-weight: bold;
+      }
+      p{
+        font-family: goshaSans;
+        font-size: 1.23vw;
+        margin: 0;
+      }
+    }
+  }
+  .dateBlock{
+    padding-left: 1.5vw;
+    width: 100%;
+    div{
+      width: 100%;
+      display: flex;
+      margin-bottom: 2.5vw;
+      p:first-child{
+        width: 43%;
+        font-weight: bold;
+      }
+      p{
+        font-family: goshaSans;
+        font-size: 1.23vw;
+        margin: 0;
+      }
+    }
+  }
+}

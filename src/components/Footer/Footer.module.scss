@@ -1,0 +1,42 @@
+.wrapper{
+  width: 100%;
+  margin: 0;
+  background: #7FD6C2;
+  padding-top: 6vw;
+  padding-bottom: 8vw;
+  .yellowLine{
+    width: 100%;
+    height: 4px;
+    background-color: #F7CA2F;
+  }
+  .blueLine{
+    width: 95%;
+    height: 4px;
+    background-color: #2C57BA;
+    margin: 0 auto;
+  }
+  .contentBlock{
+    width: 100%;
+    display: flex;
+    padding-bottom: 6vw;
+    >div{
+      width: 20%;
+      h2{
+        color: white;
+        font-family: goshaSans;
+        font-weight: 600;
+        font-size: 1.0vw;
+        letter-spacing: 2px;
+        margin-bottom: 1.5vw;
+        margin-top: 3vw;
+      }
+      div{
+        color: white;
+        font-family: goshaSans;
+        font-size: 1.0vw;
+        letter-spacing: 1px;
+        margin-bottom: 0.5vw;
+      }
+    }
+  }
+}

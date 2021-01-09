@@ -1,0 +1,23 @@
+.lotsNav{
+  display: flex;
+  margin-top: 4vw;
+  div{
+    padding-bottom: 0.1vw;
+    margin-right: 4.5vw;
+    font-size: 1.7vw;
+    font-family: goshaSans;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s linear;
+  }
+  div:last-child{
+    margin-right: 0;
+  }
+  div:hover{
+    cursor: pointer;
+  }
+  .active{
+    color: black;
+    border-bottom: 0.3vw solid #FFD33E;
+  }
+}

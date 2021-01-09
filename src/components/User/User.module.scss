@@ -1,0 +1,181 @@
+.wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 1.5vw;
+  padding-bottom: 10vw;
+  .hiBlock {
+    width: 100%;
+    color: #E0719E;
+    font-family: goshaSans;
+    font-size: 2vw;
+    font-weight: bold;
+  }
+  .mainInfoBlock {
+    margin-top: 1vw;
+    width: 100%;
+    display: flex;
+    .avatar {
+      width: 30%;
+      height: 20vw;
+      background-color: #d2d0d0;
+    }
+    .Info {
+      width: 70%;
+      padding-top: 1.5vw;
+      padding-left: 2vw;
+      .cityInfo {
+        p {
+          font-family: goshaSans;
+          font-size: 1.3vw;
+          color: black;
+          font-weight: bold;
+          margin: 0;
+        }
+        p:last-child {
+          color: #C4C4C4;
+          font-size: 0.95vw;
+          margin-top: 0.5vw;
+          font-weight: normal;
+        }
+      }
+      .statisticInfo {
+        width: 70%;
+        margin-top: 2vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        >div {
+          margin-right: 2.9vw;
+          margin-bottom: 1vw;
+          p{
+            margin: 0;
+            margin-bottom: 1vw;
+            font-size: 0.95vw;
+            font-family: goshaSans;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.snBlock{
+  width: 100%;
+  border-radius: 1vw;
+  border: 0.1vw solid #8F9098;
+  padding: 1vw;
+  margin-top: 2vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  >p{
+    font-family: goshaSans;
+    font-size: 0.86vw;
+    font-weight: bold;
+  }
+  >div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.5vw;
+    >div:first-child{
+      width: 3vw;
+      height: 3vw;
+      background-color: #C4C4C4;
+      border-radius: 1vw;
+    }
+    .checked{
+      background-color: #3A7DD6!important;
+    }
+    >div{
+      font-family: goshaSans;
+      font-size: 0.86vw;
+      font-weight: bold;
+      padding-left: 1vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      p{
+        font-weight: normal;
+        font-family: goshaSans;
+        font-size: 0.86vw;
+        color: #C4C4C4;
+        margin: 0;
+      }
+      a{
+        text-decoration: none;
+        font-family: goshaSans;
+        font-size: 0.86vw;
+        color: #2C57BA;
+        margin: 0;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.paddingBlock{
+  width: 100%;
+  color: rgba(224, 113, 158, 0);
+  opacity: 0;
+  font-family: goshaSans;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.questionButtonBlock{
+  display: flex;
+  justify-content: center;
+  padding-top: 2vw;
+}
+
+.questionButton{
+  background-color: #F7CA2F;
+  width: 30%;
+  height: 3.2vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  font-family: goshaSans;
+  font-size: 1.05vw;
+  transition: all 0.5s ease-out;
+}
+.questionButton:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.offerButton{
+  border: 0.2vw solid black;
+  width: 95%;
+  height: 3.2vw;
+  position: relative;
+  div{
+    position: absolute;
+    width: 100%;
+    height: 3.2vw;
+    background-color: #F7CA2F;
+    left: 6%;
+    top: -0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-family: goshaSans;
+    font-size: 1.05vw;
+    transition: all 0.5s ease-out;
+  }
+  div:hover{
+    border: 0.2vw solid black;
+    background: none;
+    cursor: pointer;
+  }
+}

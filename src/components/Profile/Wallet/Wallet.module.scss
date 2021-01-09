@@ -1,0 +1,128 @@
+.wallet{
+  padding-top: 4vw;
+}
+h2{
+  margin: 0;
+  color: black;
+  font-family: goshaSans;
+  font-size: 1.6vw;
+  font-weight: bold;
+}
+.history{
+  margin-top: 5vw;
+  width: 87%;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  box-sizing: border-box;
+  border-radius: 0.5vw;
+  border: 0.1vw dashed #8F9098;
+  .timeBlock{
+    display: flex;
+    h2{
+      margin: 0;
+      color: black;
+      font-family: goshaSans;
+      font-size: 1.6vw;
+      font-weight: bold;
+    }
+    select{
+      margin-left: 2vw;
+      border-radius: 0.5vw;
+      border: 0.1vw solid black;
+      padding-left: 1vw;
+      width: 8vw;
+      font-family: goshaSans;
+      font-size: 1vw;
+      color: black;
+    }
+  }
+}
+.filterBlock{
+  padding-top: 2vw;
+  display: flex;
+  div{
+    margin-right: 2vw;
+    font-family: goshaSans;
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 0.7vw;
+    border-radius: 0.5vw;
+  }
+  div:hover{
+    cursor: pointer;
+  }
+  .active{
+    background-color: rgba(127, 214, 194, 0.2);
+    text-decoration: none;
+    border: 0.1vw solid rgba(56, 58, 72, 0.2);
+  }
+}
+.operations{
+  padding-top: 2vw;
+  width: 100%;
+  .operationsNav{
+    display: flex;
+    div{
+      padding: 0.7vw;
+      padding-left: 1.5vw;
+      padding-right: 1.5vw;
+      color: black;
+      font-family: goshaSans;
+      font-size: 1.2vw;
+      border-bottom: 0.2vw solid #bcbbbb;
+      font-weight: bold;
+    }
+    div:hover{
+      cursor: pointer;
+    }
+    div:first-child{
+      padding-left: 0;
+    }
+    .activeOperation{
+      border-bottom: 0.3vw solid #FFD33E;
+    }
+  }
+  .operationsContent{
+    padding-top: 2.5vw;
+    width: 100%;
+    >div{
+      display: flex;
+      align-items: center;
+      p{
+        color: black;
+        font-family: goshaSans;
+        font-size: 1.35vw;
+        font-weight: bold;
+        margin: 0;
+      }
+      input{
+        border-radius: 0.5vw;
+        border: 0.1vw solid black;
+        height: 2.5vw;
+        width: 7vw;
+        padding-left: 1vw;
+        font-family: goshaSans;
+        font-size: 1vw;
+        margin-left: 1.5vw;
+      }
+      .button{
+        margin-left: 2.2vw;
+        padding: 0.8vw;
+        padding-left: 1.4vw;
+        padding-right: 1.4vw;
+        background-color: #FFD33E;
+        color: black;
+        font-weight: bold;
+        font-size: 1.1vw;
+        font-family: goshaSans;
+      }
+      .button:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}

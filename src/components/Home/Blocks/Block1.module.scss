@@ -1,0 +1,91 @@
+.wrapper{
+  height: calc(100vh - 140px);
+  display: flex;
+  align-items: center;
+}
+.backgroundBlock{
+  position: absolute;
+  left: 0;
+  top: 140px;
+  z-index: -1000;
+  height: calc(100vh - 140px);
+  width: 61%;
+  background-image: url("../../../common/images/home/фон.png");
+  background-size: 100%;
+  background-repeat: repeat-y;
+}
+
+.yellowImg{
+  width: 100%;
+}
+.contentBlock{
+  height: 30.5vw;
+  position: relative;
+  h1{
+    font-family: goshaSans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.1vw;
+    line-height: 5.3vw;
+  }
+  p{
+    font-family: goshaSans;
+    font-style: normal;
+    font-size: 1.2vw;
+    line-height: 1.5vw;
+  }
+  .buttonsBlock{
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    left:0;
+    >div{
+      position: relative;
+      width: 10vw;
+      height: 3.5vw;
+      font-family: goshaSans;
+      font-size: 1.2vw;
+      line-height: 0;
+      padding: 0;
+      font-style: normal;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s ease-in;
+      div{
+        transition: all 0.5s ease-in;
+        width: 10vw;
+        height: 3.5vw;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+      }
+    }
+    >div:first-child{
+      margin-right: 22px;
+      background: #F7CA2F;
+      div{
+        border: 1px solid black;
+        z-index: -100;
+      }
+      &:hover{
+        cursor: pointer;
+        border: 1px solid black;
+        background: none;
+      }
+    }
+    >div:last-child{
+      color: #F7CA2F;
+      border: 1px solid #F7CA2F;
+      div{
+        border: 1px solid #F7CA2F;
+        z-index: -100;
+      }
+      &:hover{
+        cursor: pointer;
+        //border: 1px solid black;
+        background: black;
+      }
+    }
+  }
+}
